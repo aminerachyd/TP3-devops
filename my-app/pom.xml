@@ -50,8 +50,11 @@
           <version>2.22.1</version>
         </plugin>
         <plugin>
-		<groupId>org.apache.maven.plugins</groupId>
+	  <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-war-plugin</artifactId>
+	  <configuration>
+	    <webXml>WebContent\WEB-INF\web.xml</webXml>
+	  </configuration>
           <version>3.3.1</version>
         </plugin>
 	<!--<plugin>
